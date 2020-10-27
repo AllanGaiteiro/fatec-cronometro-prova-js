@@ -31,8 +31,10 @@ Na pasta do repositorio clonado, procure pelo arquivo index.html e abra ele no n
 
 ## Atividade Proposta
 
--O relógio deverá mostrar a hora em tempo real com 2 casas para hora, minuto e segundoEx: 00:00:00
--O cronômetro deverá possuir 4 botões: start, stop, reset (reiniciar) e lap (marcar volta).
+
+O relógio deverá mostrar a hora em tempo real com 2 casas para hora, minuto e segundoEx: 00:00:00
+O cronômetro deverá possuir 4 botões: start, stop, reset (reiniciar) e lap (marcar volta).
+
 * O botão de start inicia o cronômetro.O botão de stop para o cronômetro.
 * O botão de reset zera o cronometro. 
 * O botão de lap deverá gravar (memorizar o tempo atual) e mostrar o tempo memorizado no quadro indicado.
