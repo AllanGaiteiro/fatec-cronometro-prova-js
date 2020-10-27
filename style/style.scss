@@ -13,16 +13,32 @@ td {
     text-align: center;
     margin: auto;
 }
+body {
+    background-color: #286278;
+}
+#nav {
+            background-color: #4d9eeb;
+        }
 #container {
     @media screen and (min-width: 600px) {
         width: 100%;
     }
+
+    footer {
+        #creador {
+            width: calc(100% / 3);
+            margin: auto;
+            text-align: center;
+        }
+    }
 }
 #main {
     margin-top: 40px;
+    margin-bottom: 40px;
     #sectLap {
         width: calc(100% / 2);
-        input{
+        height: 600px;
+        input {
             width: 100%;
         }
     }
@@ -30,6 +46,7 @@ td {
         width: 100%;
         margin-left: 10px;
         margin-right: 10px;
+
         #cronometro {
             font-family: "DS-Digital";
             font-size: 3em;
@@ -50,10 +67,11 @@ td {
     }
     #sectMemo {
         width: 100%;
+        background-color: white;
+        border-radius: 5px;
     }
     @media screen and (max-width: 600px) {
         width: 100%;
         display: block;
-        
     }
 }

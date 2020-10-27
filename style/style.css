@@ -16,18 +16,34 @@ td {
   margin: auto;
 }
 
+body {
+  background-color: #286278;
+}
+
+#nav {
+  background-color: #4d9eeb;
+}
+
 @media screen and (min-width: 600px) {
   #container {
     width: 100%;
   }
 }
 
+#container footer #creador {
+  width: calc(100% / 3);
+  margin: auto;
+  text-align: center;
+}
+
 #main {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #main #sectLap {
   width: calc(100% / 2);
+  height: 600px;
 }
 
 #main #sectLap input {
@@ -60,6 +76,8 @@ td {
 
 #main #sectMemo {
   width: 100%;
+  background-color: white;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
