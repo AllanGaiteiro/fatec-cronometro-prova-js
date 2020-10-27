@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url("../font/DS-DIGIB.TTF");
+}
+
+td {
+  font-family: "DS-Digital";
+  font-size: 1em;
+  text-align: center;
+}
+
+#relogio {
+  font-family: "DS-Digital";
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  #container {
+    width: 100%;
+  }
+}
+
+#main {
+  margin-top: 40px;
+}
+
+#main #sectLap {
+  width: calc(100% / 2);
+}
+
+#main #sectLap input {
+  width: 100%;
+}
+
+#main #sectCrono {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#main #sectCrono #cronometro {
+  font-family: "DS-Digital";
+  font-size: 3em;
+}
+
+#main #sectCrono div #start,
+#main #sectCrono div #stop,
+#main #sectCrono div #reset {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#main #sectCrono div #stop {
+  width: calc(100% - 100px);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#main #sectMemo {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    width: 100%;
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

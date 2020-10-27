@@ -9,7 +9,7 @@ relogio = () => {
 
         const data = new Date()
 
-        relogio.value = `${data.toLocaleTimeString()}`;
+        relogio.innerText = `${data.toLocaleTimeString()}`;
         dataAtual.innerText = `${data.toLocaleDateString()}`; 
 }   
 ////// time relogio

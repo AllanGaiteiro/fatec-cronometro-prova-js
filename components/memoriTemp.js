@@ -1,7 +1,11 @@
 //// chamar o elemento que armazenara os tempos
 var posit = document.getElementById('positColunas')
 
-var tempoGuard = {};
+var tempoGuard = {
+    min:00,
+    seg:00,
+    decSeg:00
+};
 
 //// limpar elemento e variavel que armazenam memoria
 CleanMemori = () => {
@@ -27,9 +31,6 @@ Tempo = (m, s, d) => {
     let min = (m < 10) ? '0' + m : m;
     let seg = (s < 10) ? '0' + s : s;
     let dec = (d < 10) ? '0' + d : d;
-    min = (min == NaN) ? 00 : min;
-    seg = (seg == NaN) ? 00 : seg;
-    dec = (dec == NaN) ? 00 : dec;
     return `${min}:${seg}:${dec}`
 }
 
