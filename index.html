@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Atividade 1</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'DS-Digital';
+        src: url('./font/DS-DIGIB.TTF');
+    }
+    td{
+        font-family: 'DS-Digital';
+        font-size: 1em;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand"> Nome</a>
+                <div class="btn btn-dark">
+                    <h2 id="data"></h2>
+                    <input style="font-family: 'DS-Digital';font-size: 2em; padding: 0px;margin: 0px;" class="btn btn-secondary btn-lg " id="relogio" type="text" readonly='true'>
+                </div>
+
+            </nav>
+        </header>
+        <main class="d-flex justify-content-between ">
+            <section>
+                <input onclick="menuMemTemp()" type="button" value="lap">
+            </section>
+            <section>
+                <input type="text" class="btn btn-secondary  btn-lg btn-block" style="font-family: 'DS-Digital';" id="cronometro" value="00:00:00"
+                    readonly='true'>
+
+                <div class="d-flex justify-content-between">
+
+                    <input class="btn btn-info col-4" onclick="menuCrono('Start')" type="button" value="Start">
+
+                    <input class="btn btn-light col-4" onclick="menuCrono('Stop')" type="button" value="Stop">
+
+                    <input class="btn btn-dark col-4" onclick="menuCrono('Reset')" type="button" value="Reset">
+
+                </div>
+
+            </section>
+            <section>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col-5">Volta</th>
+                            <th scope="col-8">Tempo</th>
+                            <th scope="col-10">TempoTotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="positColunas">
+                        <!-- Onde vai os Tempos salvos -->
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="./components/relogio.js"></script>
+    <script src="./components/cronometro.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./components/memoriTemp.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
