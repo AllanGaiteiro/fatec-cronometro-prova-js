@@ -2,7 +2,7 @@
 
 
 
-relogio = () => {
+function Relogio(){
     ///// chamando o elemento onde o relogio sera renderizado
         const relogio = document.getElementById('relogio');
         const dataAtual = document.getElementById('data');
@@ -11,6 +11,7 @@ relogio = () => {
 
         relogio.innerText = `${data.toLocaleTimeString()}`;
         dataAtual.innerText = `${data.toLocaleDateString()}`; 
+        setTimeout(Relogio);
 }   
 ////// time relogio
-setInterval(relogio, 1000)
+Relogio()
